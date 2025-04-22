@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Naruto Tribute Page</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naruto Tribute Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Tableau Embed API -->
+  <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
 </head>
 <body>
 
-    <header>
-        <h1>Nephi's Site</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="resume.html">Résumé</a>
-            <a href="scratch.html">Scratch Page</a>
-            <a href="webapp.html">Web App</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Nephi's Site</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Résumé</a>
+      <a href="scratch.html">Scratch Page</a>
+      <a href="webapp.html">Web App</a>
+    </nav>
+  </header>
 
-    <main>
-        <h2>Naruto Tribute Page</h2>
-        <p>This page is dedicated to one of my favorite anime characters: <strong>Naruto Uzumaki</strong>. Below are themes and quotes that have inspired me.</p>
+  <main>
+    <h2>Naruto Tribute Page</h2>
+    <p>This page is dedicated to one of my favorite anime characters: <strong>Naruto Uzumaki</strong>. Below are themes and quotes that have inspired me.</p>
 
-        <div class="content-section">
-            <img src="images/naruto.jpg" alt="Naruto Image" width="250" />
-        </div>
+    <img src="images/naruto.jpg" alt="Naruto Uzumaki" width="300" />
 
-        <h3>Inspiring Themes in Naruto</h3>
-        <ol>
-            <li>Never give up
-                <ul>
-                    <li>Naruto keeps pushing through no matter the odds.</li>
-                </ul>
-            </li>
-            <li>Believe in yourself
-                <ul>
-                    <li>Even when others doubt you, you can change your destiny.</li>
-                </ul>
-            </li>
-        </ol>
-
-        <h3 id="quotes">Favorite Naruto Quotes</h3>
+    <h3>Inspiring Themes in Naruto</h3>
+    <ol>
+      <li>Never give up
         <ul>
-            <li>"If you don't like your destiny, don't accept it. Instead, have the courage to change it the way you want it to be."</li>
-            <li>"Believe it!"</li>
-            <li>"When a man learns to love, he must bear the risk of hatred."</li>
-            <li>"Hard work is worthless for those that don’t believe in themselves."</li>
-            <li>"If you don’t like the hand that fate’s dealt you with, fight for a new one."</li>
+          <li>Naruto keeps pushing through no matter the odds.</li>
         </ul>
+      </li>
+      <li>Believe in yourself
+        <ul>
+          <li>Even when others doubt you, you can change your destiny.</li>
+        </ul>
+      </li>
+    </ol>
 
-        <h2>Watch Naruto in Action</h2>
-        <iframe width="480" height="270" src="https://www.youtube.com/embed/wzoIZO8WbI8" frameborder="0" allowfullscreen></iframe>
+    <h3 id="quotes">Favorite Naruto Quotes</h3>
+    <ul>
+      <li>"If you don't like your destiny, don't accept it. Instead, have the courage to change it the way you want it to be."</li>
+      <li>"Believe it!"</li>
+      <li>"When a man learns to love, he must bear the risk of hatred."</li>
+      <li>"Hard work is worthless for those that don’t believe in themselves."</li>
+      <li>"If you don’t like the hand that fate’s dealt you with, fight for a new one."</li>
+    </ul>
 
-        <h2>Tableau Graph – Anime Trends</h2>
-        <iframe src="https://public.tableau.com/views/AnimeGenrePopularityDashboard/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
-        width="1000" height="600" frameborder="0" allowfullscreen="true"></iframe>
+    <h2>Watch Naruto in Action</h2>
+    <iframe width="480" height="270" src="https://www.youtube.com/embed/wzoIZO8WbI8" frameborder="0" allowfullscreen></iframe>
 
-    </main>
+    <h2>Interactive Tableau Graph – Introducing Naruto</h2>
+    <tableau-viz id="tableauViz"
+      src="https://public.tableau.com/views/IntroducingNaruto/Main"
+      width="1000"
+      height="800"
+      toolbar="bottom"
+      hide-tabs>
+    </tableau-viz>
+  </main>
 
-    <footer>
-        <br />
-        <a href="#quotes">Jump to Quotes</a>
-        <br />
-        <a href="webapp.html">Check Out My Web App</a>
-    </footer>
+  <footer>
+    <br />
+    <a href="#quotes">Jump to Quotes</a>
+    <br />
+    <a href="webapp.html">Check Out My Web App</a>
+  </footer>
 
 </body>
 </html>

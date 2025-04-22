@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Naruto Quote of the Day</title>
+  <script>
+    const quotes = [
+      "If you don't like your destiny, don't accept it. Instead, have the courage to change it the way you want it to be.",
+      "Believe it!",
+      "When a man learns to love, he must bear the risk of hatred.",
+      "Hard work is worthless for those that don’t believe in themselves.",
+      "If you don’t like the hand that fate’s dealt you with, fight for a new one."
+    ];
+    function getQuote() {
+      const random = Math.floor(Math.random() * quotes.length);
+      document.getElementById('quote').innerText = quotes[random];
+    }
+  </script>
+</head>
+<body>
+  <h1>Naruto Quote of the Day</h1>
+  <button onclick="getQuote()">Get Quote</button>
+  <p id="quote" style="font-style: italic; margin-top: 20px;"></p>
+
+  <a href="scratch.html">Back to Scratch Page</a>
+</body>
+</html>
